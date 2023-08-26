@@ -18,10 +18,10 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((prevCount) => prevCount > 0 ? prevCount=== 0 : prevCount - 1 )}>
+        <button onClick={() => setCount((prevCount) => prevCount > 0 ? prevCount - 1 : 0 )}>
           - 
         </button>
-        <span>{count}</span>
+        <span className='count'>{count}</span>
         <button onClick={() => setCount((prevCount) => prevCount + 1)}>
           +
         </button>
