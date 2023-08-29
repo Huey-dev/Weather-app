@@ -1,8 +1,15 @@
 import React from 'react'
+import SearchBar from './components/SearchBar'
+import CurrentWeather from './components/CurrentWeather'
+import WeatherForecast from './components/WeatherForecast'
 
 const App = () => {
   return (
-    <div>Weather-App</div>
+    <div className='App'>
+      <SearchBar/>
+      <CurrentWeather/>
+      <WeatherForecast/>
+    </div>
   )
 }
 
