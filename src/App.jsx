@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import SearchBar from './components/SearchBar'
 import CurrentWeather from './components/CurrentWeather'
 import WeatherForecast from './components/WeatherForecast'
