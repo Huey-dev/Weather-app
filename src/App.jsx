@@ -4,9 +4,14 @@ import CurrentWeather from './components/CurrentWeather'
 import WeatherForecast from './components/WeatherForecast'
 
 const App = () => {
+
+  const handleonSearchChange = (searchData) => {
+    console.loh(searchData)
+  }
+
   return (
     <div className='App'>
-      <SearchBar/>
+      <SearchBar onSearchChange={handleonSearchChange}/>
       <CurrentWeather/>
       <WeatherForecast/>
     </div>
