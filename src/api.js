@@ -1,11 +1,11 @@
 import axios from "axios";
 export const geoApiOptions = {
-
+	ignoreBrowserTokenWarning: true,
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': import.meta.env.VITE_X_RAPIDAPI_TOKEN,
+		'X-RapidAPI-Key': import.meta.env.VITE_RAPIDAPI_TOKEN,
 		'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com',
-		ignoreBrowserTokenWarning: true,
+		
 	}
 };
 
