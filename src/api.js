@@ -3,8 +3,9 @@ export const geoApiOptions = {
 
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'c35d6d0860msh34ce90b30497f82p1f64d8jsnd70778a7d09a',
-		'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
+		'X-RapidAPI-Key': import.meta.env.VITE_X_RAPIDAPI_TOKEN,
+		'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com',
+		ignoreBrowserTokenWarning: true,
 	}
 };
 
