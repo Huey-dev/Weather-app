@@ -9,7 +9,7 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="max-w-screen-lg mx-auto my-5 px-4 sm:px-6 lg:px-8">
       <SearchBar onSearchChange={handleonSearchChange} />
       <CurrentWeather />
       <WeatherForecast />
