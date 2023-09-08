@@ -2,7 +2,14 @@ import React from 'react'
 
 const CurrentWeather = () => {
   return (
-    <div>CurrentWeather</div>
+    <div className='weather'>
+      <div className="top">
+        <p className="cityname">Belgrade</p>
+        <p className="weather_description">Sunny</p>
+      </div>
+      <img src="icons/01d.png" alt="weather" className='waether_icon' />
+
+    </div>
   )
 }
 
