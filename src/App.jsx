@@ -13,10 +13,10 @@ const App = () => {
     const [lat, lon] = searchData.value.split(" ");
 
     const currentWeatherFetch = axios.get(
-      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`
+      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
     );
     const forecastFetch = axios.get(
-      `${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`
+      `${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
     );
     // promise all to fetch both api for weather forecast and geo location
     Promise.all([currentWeatherFetch, forecastFetch])
