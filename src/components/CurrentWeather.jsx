@@ -10,24 +10,20 @@ const CurrentWeather = () => {
           </p>
           <p className="font-normal text-base leading-tight ml-2 m-0">Sunny</p>
         </div>
-        <img 
-          src="icons/01d.png"
-          alt="weather"
-          className="w-16 h-16 " 
-        />
+        <img src="icons/01d.png" alt="weather" className="w-16 h-16 " />
       </div>
-      
+
       <div className="px-4 pb-4 flex justify-between items-center">
         <p className="font-semibold text-5xl leading-tight m-0 mb-4">18°C</p>
         <div className="w-full pl-5">
           <div className="flex justify-between">
-            <span className="text-left font-normal text-sm border-b border-white mb-2 py-1">Details</span>
+            <span className="text-left font-normal text-sm border-b border-white mb-2 py-1">
+              Details
+            </span>
           </div>
           <div className="flex justify-between">
             <span className="text-left font-normal text-sm">Feels like</span>
-            <span className="text-right font-semibold text-sm">
-              °C
-            </span>
+            <span className="text-right font-semibold text-sm">°C</span>
           </div>
           <div className="flex justify-between">
             <span className="text-left font-normal text-sm">Wind</span>
