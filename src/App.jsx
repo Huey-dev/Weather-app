@@ -46,7 +46,7 @@ const App = () => {
       const storedCurrentWeather = localStorage.getItem("currentWeather");
       const storedForecast = localStorage.getItem("forecast");
       const storedCityName = localStorage.getItem("cityName")
-      console.log("Stored City Name:", storedCityName);
+    
       if (storedCityName) {
         setCurrentWeather((prevData) => ({
           ...prevData,
